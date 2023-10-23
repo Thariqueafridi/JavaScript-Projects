@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form
+      action="Signup result.html"
+      method="GET"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <label for="username">User Name</label>
+        <input type="text" name="username" id="username" required />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <div>
+        <label for="dateofbirth">Date of Birth</label>
+        <input
+          type="date"name="dateofbirth"id="dateofbirth"requiredmaxlength="4"min="1900"max="2024"step="20"/>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="about">About</label>
+        <textarea name="about" id="about" cols="20" rows="6">Type Something....</textarea>
+      </div>
+      <div>
+        <input type="checkbox" name="sms alert" id="sms alert" />
+        <label for="sms alert">SMS Alert</label>
+      </div>
+      <div>
+        <input type="checkbox" name="email alert" id="email alert" />
+        <label for="email alert">E-mail Alert</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+      </div>
+      <div>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+      </div>
+      <div>
+        <select name="state" id="state" multiple>
+          <option value="TamilNadu">TamilNadu</option>
+          <option value="AP">Andhra Pradesh</option>
+          <option value="WB">West Bengal</option>
+          <option value="Kerala">Kerala</option>
+        </select>
+      </div>
+      <div>
+        <label for="file">Resume</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <!-- <button type="submit">Signup</button> -->
+      <input type="image" src="/FormDemo/Submit.jpg" width="50" />
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
